@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package model;
+
+option go_package = "./notif";
+
+message NotifRequest {
+    string title = 1;
+    string body = 2;
+    string to = 3;
+    string image = 4;
+    string channel = 5;
+    int32 notificationId = 6;
+    string notificationType = 7;
+}
